@@ -75,7 +75,28 @@ we found any info in python code ,her data=debug
 passing parameter data=debug
 <img width="1514" height="615" alt="image" src="https://github.com/user-attachments/assets/71de2e9b-6575-465c-acae-643d4e228d00" />
 
-THM{SUPPLY_CH41N_VULN3R4B1L1TY}
+Flag:THM{SUPPLY_CH41N_VULN3R4B1L1TY}
+# AS04: Cryptographic Failures
+Challenge Link: http://10.49.154.138:5004/
+<img width="1691" height="526" alt="image" src="https://github.com/user-attachments/assets/63d21009-f4cd-47c0-872e-ab9a7073aa42" />
+
+view page source we found /static/js/decrypt.js
+
+<img width="1600" height="659" alt="image" src="https://github.com/user-attachments/assets/261a59c8-7ed4-4302-8db0-3cba28dfb59a" />
+
+click we see
+
+<img width="493" height="233" alt="image" src="https://github.com/user-attachments/assets/8c17f51b-04f6-415c-aa9d-29b482607224" />
+
+getting the informaiton of key implement in cyberchef
+
+<img width="1600" height="802" alt="image" src="https://github.com/user-attachments/assets/d8bf644e-8d11-490e-b447-7866bd894fb6" />
+ Flag: THM{CRYPTO_FAILURE_H4RDCOD3D_K3Y}
+
+
+
+
+
 
 
 
