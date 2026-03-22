@@ -92,7 +92,27 @@ getting the informaiton of key implement in cyberchef
 
 <img width="1600" height="802" alt="image" src="https://github.com/user-attachments/assets/d8bf644e-8d11-490e-b447-7866bd894fb6" />
  Flag: THM{CRYPTO_FAILURE_H4RDCOD3D_K3Y}
+ # AS06: Insecure Design
+ Challenge Link: http://10.49.154.138:5005
+ <img width="1522" height="832" alt="image" src="https://github.com/user-attachments/assets/0887b424-669e-4ba6-9bc7-95d8d73d8cb6" />
+/api/users/admin common endpoints in a site
+<img width="520" height="197" alt="image" src="https://github.com/user-attachments/assets/4b37edc3-9706-4ed3-8b8d-b36371724b1a" />
+trying differnt list after /api/?/admin
+Fuzzing with fuff 
+<img width="1113" height="526" alt="image" src="https://github.com/user-attachments/assets/6d043145-878d-40f9-8212-4436bd737c15" />
+/messages endpiont
+<img width="831" height="322" alt="image" src="https://github.com/user-attachments/assets/11bbbc38-8ae0-4659-87fb-0af349294626" />
+Flag:THM{1NS3CUR3_D35IGN_4SSUMPT10N}
+# Conclusion
+Security design failures across 
 
+AS02 Security Misconfigurations
+
+AS03 Software Supply Chain Failures, AS04 Cryptographic Failures
+
+AS06 Insecure Design 
+
+All come from the same root cause: weak foundations
 
 
 
