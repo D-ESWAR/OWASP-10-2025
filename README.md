@@ -136,6 +136,12 @@ All come from the same root cause: weak foundations
 >A08: Software or Data Integrity Failures
 # A04: Cryptographic Failures
 challenege: http://10.48.138.35:8001.
+FINDING ONE LETTER SO ,USING BURP TO INTRUDUCER TO COMBINATION
+<img width="1872" height="799" alt="image" src="https://github.com/user-attachments/assets/8ae3752a-1902-409f-ab93-201c6db63029" />
+COMBINATIONS 1 to 9 and a to z
+
+<img width="1800" height="619" alt="image" src="https://github.com/user-attachments/assets/76e1480e-40f1-4e43-b783-ce03d31563c0" />
+Flag: THM{WEAK_CRYPTO_FLAG}
 
 # A05: Injection
 You can access this portion of the practical on http://10.48.138.35:8000.
