@@ -58,9 +58,25 @@ we can give /api/user/admin or any aplhabets (guesssing normal and common direct
 Flag: THM{V3RB0S3_3RR0R_L34K}
 # AS03: Software Supply Chain Failures
 Challenge : http://10.49.154.138:5003
+
 Python file they given to us
 <img width="1763" height="774" alt="image" src="https://github.com/user-attachments/assets/4f6e4689-1e96-49f1-b350-c450cef93eb5" />
+
 we found check whterher they have information /api/health and /api/process.
+In /api/helath-no information
+
+In header missing content-type:application/json
+<img width="1496" height="547" alt="image" src="https://github.com/user-attachments/assets/5c225e5f-e341-4084-aaad-de2fb2ee0c09" />
+
+we found any info in python code ,her data=debug
+<img width="688" height="443" alt="image" src="https://github.com/user-attachments/assets/d182cbf0-8201-4ef6-8126-578921193bdd" />
+8074" />
+
+passing parameter data=debug
+<img width="1514" height="615" alt="image" src="https://github.com/user-attachments/assets/71de2e9b-6575-465c-acae-643d4e228d00" />
+
+THM{SUPPLY_CH41N_VULN3R4B1L1TY}
+
 
 
 
