@@ -196,6 +196,9 @@ OUTPUT OF THE CODE :
 
 Flag:THM{INSECURE_DESERIALIZATION}
 
+ # Proof.
+ 
+  https://tryhackme.com/waltstar7/badges/owasp-10?utm_campaign=social_share&utm_medium=social&utm_content=badge&utm_source=copy&sharerId=67e24f6eb26250fe25dd502d
 
 
 
